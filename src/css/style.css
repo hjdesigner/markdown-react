@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+@import '~normalize.css';
+@import '~highlight.js/styles/dracula.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+body,
+html,
+[data-js="app"],
+.editor {
+  width: 100%;
+  height: 100%;
+}
+.editor {
+  display: flex;
+  flex-wrap: wrap;
+}
+textarea {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  border: 0;
+  padding: 1%;
+  font-size: 1m;
+}
+.view {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  background-color: #000;
+  color: #FFF;
+  padding: 1%;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #2f2e2e;
+}
+button {
+    width: 100%;
+    display: flex;
+    max-width: 150px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    background-color: #72d608;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2em;
+    border: 0;
+    cursor: pointer;
+}
