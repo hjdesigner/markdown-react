@@ -23,38 +23,43 @@ html,
   flex-wrap: wrap;
 }
 textarea {
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height: calc(100% - 60px);
   display: inline-block;
   border: 0;
   padding: 1%;
   font-size: 1m;
 }
+.files-list {
+  height: calc(100% - 40px);
+  width: 20%;
+  padding: 20px;
+  background-color: #ccc;
+}
 .view {
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height: calc(100% - 40px);
   display: inline-block;
   background-color: #000;
   color: #FFF;
   padding: 1%;
+  overflow: auto;
 }
 header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   background-color: #2f2e2e;
+      align-items: center;
 }
-button {
-    width: 100%;
+.save-message {
     display: flex;
-    max-width: 150px;
-    height: 40px;
-    text-align: center;
-    justify-content: center;
-    background-color: #72d608;
-    color: #000;
-    font-weight: 600;
+    color: #FFF;
+    font-weight: 400;
     font-size: 1.2em;
-    border: 0;
-    cursor: pointer;
+    margin-right: 20px;
+        padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
